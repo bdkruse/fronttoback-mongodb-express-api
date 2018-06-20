@@ -3,8 +3,8 @@ This is the MongoDB/Express component that is a requirement for the [front to ba
 
 ### Prerequisites
 ```
-[Node](https://nodejs.org/en/)
-[MongoDB](https://www.mongodb.com/download-center?#community)
+Node -https://nodejs.org/en/
+MongoDB - https://www.mongodb.com/download-center?#community
 ```
 
 ### Getting Started
@@ -12,7 +12,7 @@ Download or clone this repository
 
 Install from the root folder
 ```
-$ npm install
+npm install
 ```
 
 Next create a database. From the project root run
@@ -22,7 +22,7 @@ mongorestore --db bookstore dump/bookstore
 
 From the project root, run the application
 ```
-$ node app
+node app
 ```
 
 Test the API
