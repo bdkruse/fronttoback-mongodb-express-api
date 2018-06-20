@@ -3,8 +3,8 @@ This is the MongoDB/Express component that is a requirement for the [front to ba
 
 ### Prerequisites
 ```
-Node
-MongoDB
+[Node](https://nodejs.org/en/)
+[MongoDB](https://www.mongodb.com/download-center?#community)
 ```
 
 ### Getting Started
@@ -15,12 +15,12 @@ Install from the root folder
 $ npm install
 ```
 
-Create a database using the datadump file in the root directory(Optional)
+Next create a database. From the project root run
 ```
-placeholder
+mongorestore --db bookstore dump/bookstore
 ```
 
-Run MongoDB from the root directory
+From the project root, run the application
 ```
 $ node app
 ```
@@ -29,3 +29,5 @@ Test the API
 ```
 http://localhost:3000/api/books
 ```
+
+This project is now ready to be used in the Front to Back Data Demo
