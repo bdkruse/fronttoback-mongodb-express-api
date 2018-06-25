@@ -5,6 +5,7 @@ This is the MongoDB/Express component that is a requirement for the [front to ba
 ```
 Node -https://nodejs.org/en/
 MongoDB - https://www.mongodb.com/download-center?#community
+Angular CLI
 ```
 
 ### Getting Started
@@ -15,9 +16,25 @@ Install from the root folder
 npm install
 ```
 
-Next create a database. From the project root run
+Install Angular CLI, if not already installed
 ```
-mongorestore --db bookstore dump/bookstore
+npm install -g @angular/cli
+```
+
+Create data folder for MongoDB, default in the drive root
+```
+C:/data/db
+C:/data/log
+```
+    
+Navigate to MongoDB/Sever/version#/bin, then start MongoDB
+```
+mongo
+```
+
+Open another command line window or terminal, from the same folder run
+```
+mongorestore --db bookstore path/to/frontobackAPI/dump/bookstore
 ```
 
 From the project root, run the application
